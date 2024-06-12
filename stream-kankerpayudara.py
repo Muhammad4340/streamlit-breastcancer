@@ -33,7 +33,7 @@ with col3:
 breastcancer_diagnosis =''
 
 # membuat tombol prediksi
-if st.button('Prediksi Penyakit Kanker Payudara'):
+if st.button('Klasifikasi Penyakit Kanker Payudara'):
     breastcancer_prediction = model.predict([[KetebalanGumpalan, KeseragamanUkuranSel, KeseragamanBentukSel, AdhesiMarginal, UkuranSelEpitelTunggal, IntiDasar, KromatinLunak, NukleolusBiasa, Mitosis]])
 
     if (breastcancer_prediction[0]==2):
